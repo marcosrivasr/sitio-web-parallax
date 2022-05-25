@@ -5,6 +5,12 @@ body {
   height: 7000px;
   margin: 0;
   padding: 0;
+
+  background-image: url(./img/clouds.jpg), url(./img/capifondo.jpg),
+    url(./img/thor-fondo.webp);
+  background-size: 100% 400vh, 100% 200vh, 100% 150vh;
+  background-position: 0 0, 0 400vh, 0 600vh;
+  background-repeat: repeat-x, repeat-x, repeat-x;
 }
 
 div {
