@@ -2,15 +2,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   overflow-x: hidden;
-  height: 7000px;
   margin: 0;
   padding: 0;
 
-  background-image: url(./img/clouds.jpg), url(./img/capifondo.jpg),
-    url(./img/thor-fondo.webp);
-  background-size: 100% 400vh, 100% 200vh, 100% 150vh;
-  background-position: 0 0, 0 400vh, 0 600vh;
-  background-repeat: repeat-x, repeat-x, repeat-x;
+  background-image: url(./img/clouds2.png), url(./img/capifondo.png),
+    url(./img/asgard.png);
+  background-size: contain, contain, contain;
+  background-position: 0 100vh, 0 350vh, 0 550vh;
+  background-repeat: repeat-x, repeat-x, no-repeat;
 }
 
 div {
@@ -24,25 +23,23 @@ div {
 }
 
 .header {
-  background: url(./img/avengers-tower-2.webp);
-  background-size: cover;
-  height: 100vh;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 110vh;
 }
 .logo {
   color: white;
   height: 400px;
   font-size: 99px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-}
-
-.logo-text {
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  font-size: 32px;
-  background-color: rgb(46, 120, 247);
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
 }
 
 .ironman-title {
@@ -54,11 +51,11 @@ div {
   letter-spacing: -20px;
 }
 .capitan-title {
-  font-size: 15em;
+  font-size: 9em;
   color: rgb(0, 136, 255);
   font-weight: bolder;
   text-align: center;
-  padding: 300px 0;
+  padding: 400px 0;
   letter-spacing: -20px;
 }
 .thor-title {
@@ -72,8 +69,8 @@ div {
 }
 .shield02 {
   position: absolute;
-  margin-top: -647px;
-  margin-left: 239px;
+  margin-top: -153px;
+  margin-left: 470px;
 }
 
 .rayo-container {
@@ -83,7 +80,7 @@ div {
 }
 
 .rayo {
-  background-color: aqua;
+  background-color: rgb(144, 233, 255);
   width: 100%;
   height: 150vh;
 }
@@ -92,23 +89,20 @@ div {
   position: absolute;
 }
 .thor02 {
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
   text-align: center;
 }
 
 .avengers-logo {
   text-align: center;
   position: relative;
+  height: 80vh;
+
+  padding-top: 500px;
 }
 
-.logo-shadow {
-  width: 100%;
-  height: 600px;
-  background-color: black;
-  margin: 300px auto 0 auto;
-  position: absolute;
-  z-index: 100;
-  top: -190px;
-}
 .avengers-logo img {
   position: relative;
   width: 80%;
